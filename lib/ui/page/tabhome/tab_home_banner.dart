@@ -6,7 +6,7 @@ import 'package:flutter_shop/constant/app_images.dart';
 import 'package:flutter_shop/model/home_model.dart';
 import 'package:flutter_shop/ui/widgets/cached_image.dart';
 import 'package:flutter_shop/utils/navigator_util.dart';
-import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:flutter_swiper_null_safety_flutter3/flutter_swiper_null_safety_flutter3.dart';
 
 ///TabHome 首页顶部的轮播图
 class TabHomeBanner extends StatelessWidget {

@@ -32,7 +32,7 @@ dependencies:
   flutter_screenutil: ^5.6.1
 
   #banner
-  flutter_swiper: ^1.1.6
+  flutter_swiper_null_safety_flutter3: ^3.0.0
 
   #带缓存的Image
   cached_network_image: ^3.2.3

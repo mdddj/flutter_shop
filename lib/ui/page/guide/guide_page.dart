@@ -6,7 +6,7 @@ import 'package:flutter_shop/constant/app_images.dart';
 import 'package:flutter_shop/constant/app_string.dart';
 import 'package:flutter_shop/utils/navigator_util.dart';
 import 'package:flutter_shop/utils/shared_preferences_util.dart';
-import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:flutter_swiper_null_safety_flutter3/flutter_swiper_null_safety_flutter3.dart';
 
 ///app首次进入引导界面
 class GuidePage extends StatefulWidget {

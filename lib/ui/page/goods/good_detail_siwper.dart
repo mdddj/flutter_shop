@@ -4,7 +4,7 @@ import 'package:flutter_shop/constant/app_colors.dart';
 import 'package:flutter_shop/constant/app_dimens.dart';
 import 'package:flutter_shop/model/good_detail_model.dart';
 import 'package:flutter_shop/ui/widgets/cached_image.dart';
-import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:flutter_swiper_null_safety_flutter3/flutter_swiper_null_safety_flutter3.dart';
 
 ///商品详情页界面顶部轮播图
 class GoodDetailSwiper extends StatelessWidget {
