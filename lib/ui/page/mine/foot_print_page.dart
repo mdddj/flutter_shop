@@ -13,7 +13,7 @@ import 'package:flutter_shop/utils/refresh_state_util.dart';
 import 'package:flutter_shop/utils/toast_util.dart';
 import 'package:flutter_shop/view_model/foot_print_view_model.dart';
 import 'package:provider/provider.dart';
-import 'package:pull_to_refresh/pull_to_refresh.dart';
+import 'package:pull_to_refresh_flutter3/pull_to_refresh_flutter3.dart';
 
 //足迹界面
 class FootPrintPage extends StatefulWidget {

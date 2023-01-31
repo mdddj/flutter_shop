@@ -14,7 +14,7 @@ import 'package:flutter_shop/utils/refresh_state_util.dart';
 import 'package:flutter_shop/view_model/cart_view_model.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:provider/provider.dart';
-import 'package:pull_to_refresh/pull_to_refresh.dart';
+import 'package:pull_to_refresh_flutter3/pull_to_refresh_flutter3.dart';
 
 ///购物车
 class TabCarPage extends StatefulWidget {

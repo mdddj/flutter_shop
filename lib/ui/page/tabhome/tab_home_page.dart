@@ -12,9 +12,9 @@ import 'package:flutter_shop/ui/page/tabhome/tab_home_topic.dart';
 import 'package:flutter_shop/ui/widgets/search_bar.dart';
 import 'package:flutter_shop/utils/navigator_util.dart';
 import 'package:flutter_shop/view_model/tab_home_view_model.dart';
-import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_shop/ui/widgets/page_status_widget.dart';
+import 'package:pull_to_refresh_flutter3/pull_to_refresh_flutter3.dart';
 
 import 'tab_home_goods.dart';
 
