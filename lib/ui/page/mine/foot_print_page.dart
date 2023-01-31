@@ -31,7 +31,7 @@ class _FootPrintPageState extends State<FootPrintPage> {
 
   var _pageIndex = 1;
 
-  var _pageSize = 10;
+  final _pageSize = 10;
 
 
   @override

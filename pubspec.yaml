@@ -67,6 +67,9 @@ dependencies:
   #EventBus 插件
   event_bus: ^2.0.0
 
+dependency_overrides:
+  platform: ^3.1.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
