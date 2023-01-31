@@ -24,12 +24,11 @@ class _MainPageState extends State<MainPage>{
 
   @override
   Widget build(BuildContext context) {
-    ScreenUtil.init(
-        BoxConstraints(
-            maxWidth: MediaQuery.of(context).size.width,
-            maxHeight: MediaQuery.of(context).size.height),
-        designSize: const Size(1080, 1920),
-        orientation: Orientation.portrait);
+    ScreenUtil.init(context,
+        // BoxConstraints(
+        //     maxWidth: MediaQuery.of(context).size.width,
+        //     maxHeight: MediaQuery.of(context).size.height),
+        designSize: const Size(1080, 1920));
     return context.watch<UserViewModel>().isFirst ? const GuidePage() : const HomePage();
   }
 }

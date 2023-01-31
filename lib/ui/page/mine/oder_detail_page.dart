@@ -88,7 +88,7 @@ class _OrderDetailPageState extends State<OrderDetailPage> {
                 margin: EdgeInsets.only(
                     left: ScreenUtil().setWidth(AppDimens.DIMENS_30),
                     right: ScreenUtil().setWidth(AppDimens.DIMENS_20)),
-                child: RaisedButton(
+                child: MaterialButton(
                   splashColor: AppColors.COLOR_FFFFFF,
                   highlightColor: AppColors.COLOR_FFFFFF,
                   highlightElevation: 0,
@@ -113,7 +113,7 @@ class _OrderDetailPageState extends State<OrderDetailPage> {
                 margin: EdgeInsets.only(
                     left: ScreenUtil().setWidth(AppDimens.DIMENS_30),
                     right: ScreenUtil().setWidth(AppDimens.DIMENS_20)),
-                child: RaisedButton(
+                child: MaterialButton(
                   splashColor: AppColors.COLOR_FFFFFF,
                   highlightColor: AppColors.COLOR_FFFFFF,
                   highlightElevation: 0,
@@ -354,7 +354,7 @@ class _OrderDetailPageState extends State<OrderDetailPage> {
               style: FMTextStyle.color_333333_size_42,
             ),
             actions: <Widget>[
-              FlatButton(
+              MaterialButton(
                   color: Colors.white,
                   onPressed: () {
                     Navigator.pop(context);
@@ -363,7 +363,7 @@ class _OrderDetailPageState extends State<OrderDetailPage> {
                     AppStrings.CANCEL,
                     style: FMTextStyle.color_ff5722_size_42,
                   )),
-              FlatButton(
+              MaterialButton(
                   color: Colors.white,
                   onPressed: () {
                     Navigator.pop(context);

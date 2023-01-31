@@ -341,7 +341,7 @@ class _FillInOrderPageState extends State<FillInOrderPage> {
               alignment: Alignment.center,
               width: ScreenUtil().setWidth(AppDimens.DIMENS_300),
               height: double.infinity,
-              child: RaisedButton(
+              child: MaterialButton(
                 color: AppColors.COLOR_FFBF86,
                 onPressed: () => _submitOrder(),
                 shape: const RoundedRectangleBorder(

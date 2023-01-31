@@ -342,7 +342,7 @@ class _AddressEditingPageState extends State<AddressEditingPage> {
             left: dimens30,
             right: dimens30),
         width: double.infinity,
-        child: RaisedButton(
+        child: MaterialButton(
           onPressed: () => _submit(model),
           color: AppColors.COLOR_FFBF86,
           shape: const RoundedRectangleBorder(
@@ -424,7 +424,7 @@ class _AddressEditingPageState extends State<AddressEditingPage> {
               style: FMTextStyle.color_333333_size_42,
             ),
             actions: <Widget>[
-              FlatButton(
+              MaterialButton(
                 color: AppColors.COLOR_FFFFFF,
                 onPressed: () {
                   Navigator.pop(context);
@@ -434,7 +434,7 @@ class _AddressEditingPageState extends State<AddressEditingPage> {
                   style: FMTextStyle.color_ff5722_size_42,
                 ),
               ),
-              FlatButton(
+              MaterialButton(
                 color: AppColors.COLOR_FFFFFF,
                 onPressed: () {
                   Navigator.pop(context);

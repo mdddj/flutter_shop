@@ -1,7 +1,5 @@
-import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
-import 'dart:io';
 
 class WebViewPage extends StatefulWidget {
 
@@ -17,12 +15,11 @@ class WebViewPage extends StatefulWidget {
 
 class _WebViewPageState extends State<WebViewPage> {
 
-  final Completer<WebViewController> _controller = Completer<WebViewController>();
 
+  late WebViewController webviewController = WebViewController()..setJavaScriptMode(JavaScriptMode.unrestricted)..loadRequest(Uri.parse(widget.bannerDetailUrl));
   @override
   void initState() {
     super.initState();
-    if (Platform.isAndroid) WebView.platform = SurfaceAndroidWebView();
   }
 
   @override
@@ -35,25 +32,8 @@ class _WebViewPageState extends State<WebViewPage> {
              centerTitle: true,
            ),
            Expanded(
-             child: WebView(
-               initialUrl: widget.bannerDetailUrl,
-               javascriptMode: JavascriptMode.unrestricted,
-               gestureNavigationEnabled: true,
-               onWebViewCreated: (WebViewController webViewController) {
-                 _controller.complete(webViewController);
-               },
-               onProgress: (int progress) {
-                 print("WebView is loading (progress : $progress%)");
-               },
-               navigationDelegate: (NavigationRequest request) {
-                 return NavigationDecision.navigate;
-               },
-               onPageStarted: (String url) {
-                 print('Page started loading: $url');
-               },
-               onPageFinished: (String url) {
-                 print('Page finished loading: $url');
-               },
+             child: WebViewWidget(
+               controller: webviewController,
              ),
            )
          ],

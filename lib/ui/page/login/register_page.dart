@@ -153,7 +153,7 @@ class RegisterPage extends StatelessWidget {
                     SizedBox(
                       width: double.infinity,
                       height: ScreenUtil().setHeight(AppDimens.DIMENS_120),
-                      child: RaisedButton(
+                      child: MaterialButton(
                         color: AppColors.COLOR_FFBF86,
                         onPressed: () {
                           //todo 调用注册逻辑

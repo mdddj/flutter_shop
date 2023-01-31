@@ -84,7 +84,7 @@ class _TabCarPageState extends State<TabCarPage> {
                   margin: EdgeInsets.only(
                       right: ScreenUtil().setWidth(AppDimens.DIMENS_30)),
                   alignment: Alignment.centerRight,
-                  child: RaisedButton(
+                  child: MaterialButton(
                     onPressed: () {
                       //todo 下单界面
                       NavigatorUtil.goFillInOrder(context, 0);

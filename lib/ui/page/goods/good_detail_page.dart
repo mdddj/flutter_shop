@@ -17,8 +17,8 @@ import 'package:flutter_shop/utils/toast_util.dart';
 import 'package:flutter_shop/view_model/cart_view_model.dart';
 import 'package:flutter_shop/view_model/good_detail_view_model.dart';
 import 'package:flutter_shop/view_model/user_view_model.dart';
+import 'package:flutter_widget_from_html_core/flutter_widget_from_html_core.dart';
 import 'package:provider/provider.dart';
-import 'package:flutter_html/flutter_html.dart';
 
 import 'good_detail_siwper.dart';
 
@@ -120,7 +120,7 @@ class _GoodDetailPageState extends State<GoodDetailPage> {
               flex: 2,
               child: Container(
                 margin: EdgeInsets.only(left: dimens30, right: dimens30),
-                child: FlatButton(
+                child: MaterialButton(
                   padding: const EdgeInsets.all(AppDimens.DIMENS_10),
                   color: AppColors.COLOR_FFB24E,
                   shape: const RoundedRectangleBorder(
@@ -138,7 +138,7 @@ class _GoodDetailPageState extends State<GoodDetailPage> {
                 flex: 2,
                 child: Container(
                   margin: EdgeInsets.only(left: dimens30, right: dimens30),
-                  child: FlatButton(
+                  child: MaterialButton(
                     padding: const EdgeInsets.all(AppDimens.DIMENS_10),
                     color: AppColors.COLOR_FFB24E,
                     shape: const RoundedRectangleBorder(
@@ -186,7 +186,7 @@ class _GoodDetailPageState extends State<GoodDetailPage> {
       widgetList.add(_goodAttribute());
     }
     if (_model.goodDetailModel!.info?.detail != null) {
-      widgetList.add(Html(data: _model.goodDetailModel!.info?.detail));
+      widgetList.add(HtmlWidget( _model.goodDetailModel!.info?.detail??""));
     }
 
     //商品问答描述
@@ -450,7 +450,7 @@ class _GoodDetailPageState extends State<GoodDetailPage> {
                   child: SizedBox(
                     height: ScreenUtil().setHeight(AppDimens.DIMENS_120),
                     width: double.infinity,
-                    child: RaisedButton(
+                    child: MaterialButton(
                       color: showType == 1
                           ? AppColors.COLOR_FF5722
                           : AppColors.COLOR_FF5722,

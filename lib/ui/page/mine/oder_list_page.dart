@@ -180,7 +180,7 @@ class _OrderListPageState extends State<OrderListPage>
                                             .setHeight(AppDimens.DIMENS_80),
                                         width: ScreenUtil()
                                             .setWidth(AppDimens.DIMENS_200),
-                                        child: RaisedButton(
+                                        child: MaterialButton(
                                           padding: EdgeInsets.zero,
                                           splashColor: AppColors.COLOR_FFFFFF,
                                           highlightColor:
@@ -212,7 +212,7 @@ class _OrderListPageState extends State<OrderListPage>
                                             .setHeight(AppDimens.DIMENS_80),
                                         width: ScreenUtil()
                                             .setWidth(AppDimens.DIMENS_200),
-                                        child: RaisedButton(
+                                        child: MaterialButton(
                                           padding: EdgeInsets.zero,
                                           splashColor: AppColors.COLOR_FFFFFF,
                                           highlightColor:
@@ -328,7 +328,7 @@ class _OrderListPageState extends State<OrderListPage>
               style: FMTextStyle.color_333333_size_42,
             ),
             actions: <Widget>[
-              FlatButton(
+              MaterialButton(
                   color: Colors.white,
                   onPressed: () {
                     Navigator.pop(context);
@@ -337,7 +337,7 @@ class _OrderListPageState extends State<OrderListPage>
                     AppStrings.CANCEL,
                     style: FMTextStyle.color_ff5722_size_42,
                   )),
-              FlatButton(
+              MaterialButton(
                   color: Colors.white,
                   onPressed: () {
                     Navigator.pop(context);
